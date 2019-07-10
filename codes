@@ -1,0 +1,19 @@
+from random import randint
+rand=randint(1,100)
+sayaç=0
+
+while True :
+    sayaç=sayaç+1
+    sayı=int(input("1 ile 100 arasında bir değer giriniz (0 çıkış):"))
+    if(sayı==0):
+        print("oyunu iptal ettiniz")
+        break
+    elif sayı<rand:
+        print("Daha yüksek bir sayı giriniz : ")
+        continue
+    elif sayı>rand:
+        print("daha düşül bir sayı giriniz : ")
+        continue
+    else :
+        print("rastgele seçilen sayı {0}!".format(rand))
+        print("Tahmin sayınız{0}".format(sayaç))
