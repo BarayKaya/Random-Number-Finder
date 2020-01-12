@@ -1,0 +1,11 @@
+import random
+number = int(random.randrange(1,100))
+while True:
+    chc = int(input("please try to find number : "))
+    if (chc>number):
+        print("your trying is bigger than the number ")
+    if (chc<number):
+        print("your trying is lower than the number ")
+    if (chc==number):
+        print("your trying is correct ")
+        break
